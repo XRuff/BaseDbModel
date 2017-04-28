@@ -14,7 +14,7 @@ use Nette\Utils\Strings;
 abstract class BaseDbModel extends Nette\Object
 {
 	/** @var string */
-	protected const TABLE_NAME_SEPARATOR = '_';
+	const TABLE_NAME_SEPARATOR = '_';
 
 	/** @var \Nette\Database\Context */
 	protected $db;
