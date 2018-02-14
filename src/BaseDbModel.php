@@ -11,8 +11,10 @@ use Nette\Utils\Strings;
  *
  * @property-read Nette\Database\Table\Selection $table
  */
-abstract class BaseDbModel extends Nette\Object
+abstract class BaseDbModel
 {
+    use Nette\Smart<;
+
 	/** @var string */
 	const TABLE_NAME_SEPARATOR = '_';
 
@@ -55,8 +57,8 @@ abstract class BaseDbModel extends Nette\Object
 	 */
 	protected function formatTableNameFromClass()
 	{
-		$shorName = $this->getReflection()->getShortName();
-		$name = substr($shorName, 0, strrpos($shorName, 'Repository'));
+        $shorName = substr(strrchr(get_class($this), "\\"), 1);
+        $name = substr($shorName, 0, strrpos($shorName, 'Repository'));
 		return strtolower(Strings::replace($name, '#(?<!^)([A-Z])#', self::TABLE_NAME_SEPARATOR . '\\1'));
 	}
 
