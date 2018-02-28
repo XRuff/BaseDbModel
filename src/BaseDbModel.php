@@ -13,7 +13,7 @@ use Nette\Utils\Strings;
  */
 abstract class BaseDbModel
 {
-    use Nette\Smart<;
+    use Nette\SmartObject;
 
 	/** @var string */
 	const TABLE_NAME_SEPARATOR = '_';
