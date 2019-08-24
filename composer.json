@@ -23,14 +23,13 @@
 		"issues": "https://github.com/XRuff/BaseDbModel/issues"
 	},
 	"require": {
-		"nette/database": "~2.4",
-		"nette/utils": "~2.4"
+		"nette/database": "^3.0",
+		"nette/utils": "^3.0"
 	},
 	"require-dev": {
-		"nette/database": "~2.4",
-		"nette/utils": "~2.4",
-		"nette/tester": "~1.1.0",
-		"tracy/tracy": "2.4.*",
+		"nette/database": "^3.0",
+		"nette/utils": "^3.0",
+		"tracy/tracy": "^3.0",
 		"vanio/coding-standards": "^0.1@dev"
 	},
 	"autoload": {
