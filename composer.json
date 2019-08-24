@@ -2,8 +2,18 @@
 	"name": "xruff/basedbmodel",
 	"type": "library",
 	"description": "Nette database utility",
-	"keywords": ["nette", "analytics", "google", "ga", "component"],
-	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"keywords": [
+		"nette",
+		"analytics",
+		"google",
+		"ga",
+		"component"
+	],
+	"license": [
+		"BSD-3-Clause",
+		"GPL-2.0",
+		"GPL-3.0"
+	],
 	"authors": [
 		{
 			"name": "Pavel Lauko"
@@ -13,14 +23,13 @@
 		"issues": "https://github.com/XRuff/BaseDbModel/issues"
 	},
 	"require": {
-		"nette/database": "~2.4",
-		"nette/utils": "~2.4"
+		"nette/database": "^3.0",
+		"nette/utils": "^3.0"
 	},
 	"require-dev": {
-		"nette/database": "~2.4",
-		"nette/utils": "~2.4",
-		"nette/tester": "~1.1.0",
-		"tracy/tracy": "2.4.*",
+		"nette/database": "^3.0",
+		"nette/utils": "^3.0",
+		"tracy/tracy": "^3.0",
 		"vanio/coding-standards": "^0.1@dev"
 	},
 	"autoload": {
@@ -32,5 +41,10 @@
 	"scripts": {
 		"lint": "\"vendor/bin/phpcs\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --ignore=vendor .",
 		"fix": "\"vendor/bin/phpcbf\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --no-patch --ignore=vendor ."
+	},
+	"config": {
+		"platform": {
+			"php": "7.1"
+		}
 	}
 }
