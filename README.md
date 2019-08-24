@@ -15,7 +15,7 @@ Installation
 The best way to install XRuff/BaseDbModel is using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require xruff/basedbmodel:dev-master
+$ composer require xruff/basedbmodel
 ```
 
 Short Documentation
