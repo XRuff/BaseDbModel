@@ -2,13 +2,7 @@
 	"name": "xruff/basedbmodel",
 	"type": "library",
 	"description": "Nette database utility",
-	"keywords": [
-		"nette",
-		"analytics",
-		"google",
-		"ga",
-		"component"
-	],
+	"keywords": ["nette"],
 	"license": [
 		"BSD-3-Clause",
 		"GPL-2.0",
@@ -27,8 +21,6 @@
 		"nette/utils": "^3.0"
 	},
 	"require-dev": {
-		"nette/database": "^3.0",
-		"nette/utils": "^3.0",
 		"tracy/tracy": "^3.0",
 		"vanio/coding-standards": "^0.1@dev"
 	},
